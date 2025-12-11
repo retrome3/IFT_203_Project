@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LearnSmart Tutoring</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>LearnSmart<span>Tutoring</span></h1>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Tutoring Services</h1>
+            <p>Customized learning solutions for every student</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Math Tutoring">
+                    </div>
+                    <div class="service-content">
+                        <h3>Mathematics Tutoring</h3>
+                        <p>From basic arithmetic to advanced calculus, our math tutors make complex concepts easy to understand.</p>
+                        <div class="price">$40/hour</div>
+                        <button class="btn" onclick="showBookingModal('Mathematics Tutoring')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Science Tutoring">
+                    </div>
+                    <div class="service-content">
+                        <h3>Science Programs</h3>
+                        <p>Biology, Chemistry, Physics - hands-on learning with virtual labs and interactive experiments.</p>
+                        <div class="price">$45/hour</div>
+                        <button class="btn" onclick="showBookingModal('Science Programs')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Language Tutoring">
+                    </div>
+                    <div class="service-content">
+                        <h3>Language Arts</h3>
+                        <p>Improve reading comprehension, writing skills, and grammar with our English language specialists.</p>
+                        <div class="price">$35/hour</div>
+                        <button class="btn" onclick="showBookingModal('Language Arts')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Programming Tutoring">
+                    </div>
+                    <div class="service-content">
+                        <h3>Programming & Coding</h3>
+                        <p>Learn Python, JavaScript, and web development with practical projects and real-world applications.</p>
+                        <div class="price">$50/hour</div>
+                        <button class="btn" onclick="showBookingModal('Programming & Coding')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Test Prep">
+                    </div>
+                    <div class="service-content">
+                        <h3>Test Preparation</h3>
+                        <p>SAT, ACT, GRE preparation with practice tests, strategy sessions, and personalized study plans.</p>
+                        <div class="price">$55/hour</div>
+                        <button class="btn" onclick="showBookingModal('Test Preparation')">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Homework Help">
+                    </div>
+                    <div class="service-content">
+                        <h3>Homework Help</h3>
+                        <p>Daily homework assistance across all subjects with step-by-step guidance and concept reinforcement.</p>
+                        <div class="price">$30/hour</div>
+                        <button class="btn" onclick="showBookingModal('Homework Help')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book a Session</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="serviceType">Service Selected:</label>
+                    <input type="text" id="serviceType" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="bookingName">Your Name:</label>
+                    <input type="text" id="bookingName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingEmail">Email:</label>
+                    <input type="email" id="bookingEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingDate">Preferred Date:</label>
+                    <input type="date" id="bookingDate" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Theme Toggle & Footer -->
+    <button id="themeToggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LearnSmart Tutoring</h3>
+                    <p>Empowering students through personalized education since 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> learnsmart@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +(234)-8943152568</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LearnSmart Tutoring. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function showBookingModal(serviceName) {
+            const modal = document.getElementById('bookingModal');
+            const serviceInput = document.getElementById('serviceType');
+            serviceInput.value = serviceName;
+            modal.style.display = 'flex';
+        }
+
+        // Booking form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking request! We will contact you soon to confirm.');
+            this.reset();
+            document.getElementById('bookingModal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
