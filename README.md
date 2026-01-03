@@ -4,7 +4,7 @@
 ## Student Information
 - **Name:** Bello Mubarak
 - **Matric Number:** 2024/13199
-- **Course:** ICT 235 - Frontend Software Development
+- **Course:** IFT 203
 - **Institution:** Bells University of Technology
 
 ## Project Description
