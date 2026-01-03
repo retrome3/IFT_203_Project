@@ -1,5 +1,4 @@
 # LearnSmart Tutoring Platform
-**Bells University ICT 235 Frontend Project**
 
 ## Student Information
 - **Name:** Bello Mubarak
@@ -8,7 +7,7 @@
 - **Institution:** Bells University of Technology
 
 ## Project Description
-This is a responsive peer tutoring website developed as the final project for ICT 235 Frontend Software Development course. The website includes five pages with interactive elements and works on mobile, tablet, and desktop devices.
+This is a responsive peer tutoring website developed as the final project for IFT 203. The website includes five pages with interactive elements and works on mobile, tablet, and desktop devices.
 
 ## How to Run
 1. Download all project files
